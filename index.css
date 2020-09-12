@@ -96,6 +96,10 @@ footer {
         background-image: none;
     }
 
+    .icon_box {
+        margin-left: 45px;
+    }
+
     .icon {
         width: 10%;
         border: 1px solid red;
