@@ -1,0 +1,61 @@
+body {
+    background-image: url(img/back-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrap {
+}
+
+#bg_img {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 10px;
+    width: 100%;
+    font-size: 10pt;
+    color: #aaaaaa;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1500px){
+}
+
+@media (max-width: 1024px){ 
+}
+
+@media all and (max-width: 770px) {
+}
+
+@media all and (max-width: 385px) {
+    body {
+        background-image: url(img/back-bg.jpg);
+    }
+
+}
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) { 
+    
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    body {
+        background-image: url(img/android-none.jpg);
+    }
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+    body {
+        background-image: url(img/android-none.jpg);
+    }
+}
+ 
