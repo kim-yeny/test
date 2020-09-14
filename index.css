@@ -67,7 +67,6 @@ footer {
     #back {
         width: 100%;
         height: 300px;
-        border: 1px solid red;
         background: url(img/ios-front-none-2.png) no-repeat;
         background-size: cover;
         background-position-y: center;
