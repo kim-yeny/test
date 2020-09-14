@@ -1,52 +1,37 @@
 body {
-    background-image: url(img/back-bg.jpg);
-    /* background-image: url(img/web-icon.jpg); */
-    background-repeat: no-repeat;
+    background: url(img/back-bg.jpg) no-repeat;
     background-size: cover;
 }
 
 #wrap {
-    position: absolute;
     width: 100%;
+    min-width: 1200px;
     height: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #back {
-    width: 1200px;
+    position: relative;
+    width: 1100px;
     height: 700px;
-    /* position: fixed; */
-    border: 1px solid blue;
-
-    background-image: url(img/web-none.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-#bg_img {
-    width: 90%;
+    background: url(img/web-front-none-bg.png) no-repeat;
+    background-size: cover;
 }
 
 .icon_box {
-    margin-left: 55px;
+    position: absolute;
+    top: 65%;
+    margin-left: 7%;
 }
 
 .icon {
-    width: 5%;
-    /* height: 30px; */
-    position: relative;
     display: inline-block;
-    border: 1px solid red;
-    top: 450px;
-    margin-right: 15px;
 }
 
 .icon img {
-    width: 100%;
+    width: 60px;
 }
 
 footer {
@@ -60,8 +45,6 @@ footer {
     text-align: center;
 }
 
-
-
 @media (max-width: 1500px){
 }
 
@@ -69,50 +52,34 @@ footer {
 }
 
 @media all and (max-width: 770px) {
-    body {
-        border: 1px solid green;
-    }
-
-    #back {
-        width: 100%;
-        height: 300px;
-        border: 1px solid green;
-        /* background-image: none; */
-        background-size: cover;
-    }
-
-    .icon_box {
-        margin-left: 30px;
-    }
-
-    .icon {
-        width: 5%;
-        border: 1px solid red;
-        top: 210px;
-    }
 }
 
 @media all and (max-width: 385px) {
     body {
-        background-image: url(img/ios-none.jpg);
-        border: 1px solid orange;
+        background: url(img/ios-bg.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    #wrap {
+        min-width: 100%;
     }
 
     #back {
         width: 100%;
         height: 300px;
-        border: 1px solid orange;
-        background-image: none;
+        border: 1px solid red;
+        background: url(img/ios-front-none-2.png) no-repeat;
+        background-size: cover;
+        background-position-y: center;
     }
 
     .icon_box {
+        top: 75%;
         margin-left: 45px;
     }
 
-    .icon {
-        width: 10%;
-        border: 1px solid red;
-        top: 230px;
+    .icon img {
+        width: 40px;
     }
 }
 
@@ -131,6 +98,5 @@ footer {
 }
 
 /* 모바일, 테블릿 세로 (해상도 ~ 479px)*/
-@media all and (max-width:479px) { 
-    
+@media all and (max-width: 479px) { 
 }
