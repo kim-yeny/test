@@ -4,7 +4,7 @@ html {
 body {
     background-color: #F8F3EB;
     /* background-color: #cccccc; */
-    color: #000000;
+    color: #291e1e;
 }
 
 /* Top */
@@ -61,6 +61,8 @@ section h1 {
     top: 20%;
     left: 75%;
     text-align: center;
+    width: max-content;
+    display: block;
 }
 
 #intro .img {
@@ -162,11 +164,8 @@ section h1 {
 
 #sect_2 .img {
     background-color: white;
-    /* 항상 화면 좌측에 위치하도록 */
-    position: absolute;
-    left: 2%;
     width: 1265px;
-    height: 750px;
+    height: 100%;
 }
 
 /* Section 2 */
@@ -242,8 +241,8 @@ section h1 {
 
 
 /* Tistory */
-/* Desttop First 1080 */
-@media all and (max-width: 1400px) and (min-width: 641px) {
+/* Desttop First 1080 641 */
+@media all and (max-width: 1080px) and (min-width: 769px) {
     body {
     }
 
@@ -276,23 +275,27 @@ section h1 {
     }
 
     /* Section 2 */
-    #sect_2 {
+    #sect_2,
+    #sect_3 {
         /* 아래 이미지 위치를 위해 영역을 제한 */
-        height: 90vh;
+        height: 50vh;
     }
     
     #sect_2 .img {
         background-color: white;
-        /* 항상 화면 좌측에 위치하도록 */
-        position: absolute;
-        left: 2%;
         width: 80%;
-        height: 90vh;
+    }
+
+    /* 이미지 영역 */
+    #sect_1 .box_wrap img,
+    #sect_3 .box_wrap img {
+        width: 165px;
+        height: 240px;
     }
 
 }
-/* Mobile */
-@media all and (max-width: 640px) {
+/* Mobile 640 */
+@media all and (max-width: 768px) {
     html {
         /* font-size: 15px; */
     }
@@ -307,6 +310,42 @@ section h1 {
         /* 1600px로 고정 */
         /* width: 1600px; */
         width: 100vw;
+    }
+
+    /* Top */
+    body nav {
+        height: 10vh;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    ul li {
+        display: none;
+    }
+        
+    /* Intro */
+    #intro {
+        /* 타이틀 : 플렉스 - 좌측 이미지 영역과 SNS 나란히 */
+        align-items: center;
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    #intro .img {
+        /* PC.ver과 다르게 화면 꽉 채움 */
+        width: 100%;
+    }
+
+    /* SNS 영역 */
+    #intro .box_sns {
+        margin: 0 auto;
+    }
+
+    /* Section 2 */
+    #sect_2,
+    #sect_3 {
+        /* 아래 이미지 위치를 위해 영역을 제한 */
+        height: 95vh;
     }
 
 }
